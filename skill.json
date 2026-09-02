@@ -1,0 +1,42 @@
+{
+  "name": "genpark-ugc-creator-brief-auction-matchmaker-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - UGC creator creative brief auction matchmaker running programmatic bidding for high-converting customer testimonial video assets.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "ugc-marketplace",
+  "tags": [
+    "ugc-creators",
+    "creative-brief",
+    "auction-matchmaker",
+    "testimonial-ads",
+    "creator-marketplace"
+  ],
+  "inputs": {
+    "brief_title": {
+      "type": "string"
+    },
+    "target_budget_per_video_usd": {
+      "type": "number"
+    },
+    "required_creator_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "brief_auction_id": {
+      "type": "string"
+    },
+    "creators_matched_and_accepted_count": {
+      "type": "integer"
+    },
+    "total_committed_campaign_spend_usd": {
+      "type": "number"
+    },
+    "brief_bidding_auction_portal_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
